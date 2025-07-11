@@ -230,3 +230,80 @@ _ОТ_КОНСОЛИ]
     <p>📁 Следите за обновлениями. Все изменения записываются в devlog.html</p>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>DevLog — Обновление от 11.07.2025</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 40px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #222;
+    }
+    .log-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .date {
+      font-size: 14px;
+      color: #888;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+    li:last-child {
+      border-bottom: none;
+    }
+    .command {
+      font-weight: bold;
+      color: #005cc5;
+    }
+    .note {
+      font-size: 13px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="log-container">
+    <h1>DevLog</h1>
+    <div class="date">Обновление от 11 июля 2025</div>
+    <ul>
+      <li>
+        ➕ Добавлена команда <span class="command">/sbor</span><br />
+        <span class="note">Создаёт голосовой канал типа «Трибуна» для указанной роли. Отправляется сообщение с пингом роли и ссылкой на канал.</span>
+      </li>
+      <li>
+        ➕ Добавлена команда <span class="command">/sbor_end</span><br />
+        <span class="note">Удаляет активную трибуну. Отправляется сообщение *«Сбор окончен!»* через вебхук.</span>
+      </li>
+      <li>
+        ⚙️ Поддержка нескольких серверов: команды работают только на заданных серверах.
+      </li>
+      <li>
+        🛡 Возможность указать существующую роль.
+      </li>
+      <li>
+        🚫 Предотвращение повторного создания трибуны, если она уже существует.
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
